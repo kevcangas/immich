@@ -9,8 +9,16 @@
 
 docker/upload
 docker/library
+docker/postgres/
 uploads
 coverage
+
+# Environment files
+.env
+.env.*
+!.env.example
+docker/.env*
+!docker/example.env
 
 mobile/generated
 mobile/gradle.properties
@@ -28,3 +36,8 @@ vite.config.js.timestamp-*
 .devcontainer/.env*
 *.tsbuildinfo
 *.tsbuildInfo
+
+# Pipeline and Graphify state
+.planning/
+graphify-out/
+PIPELINE_PROGRESS.md

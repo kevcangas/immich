@@ -1,0 +1,6 @@
+# Root Docker Compose bridge for Homelab and root-level orchestration
+# Preserves upstream immich/docker structure without moving files
+name: immich
+
+include:
+  - path: docker/docker-compose.yml
