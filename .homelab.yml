@@ -1,4 +1,7 @@
 app_name: immich
+compose_path: docker/docker-compose.yml
+env_path: docker/.env
+
 services:
   - name: immich-web
     container: immich_server
